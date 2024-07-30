@@ -1,4 +1,3 @@
-
 import 'package:book_app/Constatnt.dart';
 import 'package:book_app/Features/Home/data/presentation/views/home_view.dart';
 import 'package:book_app/Features/Splash/presentation/views/Widgets/sliding_Animation.dart';
@@ -67,7 +66,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigationtohomeview() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const homeView(), transition: Transition.fadeIn,duration: kTransitionDuration);
+      Get.to(() => const homeView(),
+          transition: Transition.fadeIn, duration: kTransitionDuration);
     });
   }
 }
