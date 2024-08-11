@@ -1,8 +1,8 @@
 import 'package:book_app/core/Utiles/assets.dart';
 import 'package:flutter/cupertino.dart';
 
-class FeatchuredListViewIteam extends StatelessWidget {
-  const FeatchuredListViewIteam({super.key});
+class CustomeBookImage extends StatelessWidget {
+  const CustomeBookImage({super.key});
 
   @override
   Widget build(BuildContext context) {

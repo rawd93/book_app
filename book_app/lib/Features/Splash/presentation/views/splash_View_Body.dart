@@ -1,11 +1,13 @@
 import 'package:book_app/Constatnt.dart';
 import 'package:book_app/Features/Home/data/presentation/views/home_view.dart';
 import 'package:book_app/Features/Splash/presentation/views/Widgets/sliding_Animation.dart';
+import 'package:book_app/core/Utiles/App_Router.dart';
 import 'package:book_app/core/Utiles/assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -65,9 +67,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
 
   void navigationtohomeview() {
-    Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const homeView(),
-          transition: Transition.fadeIn, duration: kTransitionDuration);
+     Future.delayed(const Duration(seconds: 2), () {
+      GoRouter.of(context).push(AppRouter.kHomeView);
     });
+   
   }
 }

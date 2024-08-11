@@ -1,3 +1,4 @@
+import 'package:book_app/Constatnt.dart';
 import 'package:flutter/cupertino.dart';
 
 abstract class Styles {
@@ -5,8 +6,8 @@ abstract class Styles {
   //   fontSize: 20,
   //   fontWeight: FontWeight.w600,
   // );
-  static const textStyle18 =
-      TextStyle(fontSize: 18, fontWeight: FontWeight.w600);
+  static const textStyle18 = TextStyle(
+      fontSize: 18, fontWeight: FontWeight.w600, fontFamily: kAmiriBold);
   //نفسه semiBold
   static const textStyle20 =
       TextStyle(fontSize: 20, fontWeight: FontWeight.normal //نفسها ريغيورال

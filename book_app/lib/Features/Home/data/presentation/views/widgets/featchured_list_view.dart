@@ -1,5 +1,6 @@
-import 'package:book_app/Features/Home/data/presentation/views/widgets/featchured_List_View_iteam.dart';
 import 'package:flutter/cupertino.dart';
+
+import 'Custom_book_Iteam.dart';
 
 class FeatchuredBooksListView extends StatelessWidget {
   const FeatchuredBooksListView({super.key});
@@ -13,7 +14,7 @@ class FeatchuredBooksListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return const  Padding(
             padding:  EdgeInsets.all(8.0),
-            child:  FeatchuredListViewIteam(),
+            child:  CustomeBookImage(),
           );
         },
       ),
