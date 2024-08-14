@@ -11,7 +11,7 @@ class CustomeBookImage extends StatelessWidget {
       child: SizedBox(
         height: MediaQuery.of(context).size.height * .3,
         child: AspectRatio(
-          aspectRatio: 2.9 / 4,
+          aspectRatio: 2.7 / 4,
           child: Container(
             // height: MediaQuery.of(context).size.height * .25,
             decoration: const BoxDecoration(

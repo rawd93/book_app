@@ -39,7 +39,7 @@ class HomeviewBody extends StatelessWidget {
         ),
         SliverFillRemaining(
             //تاخد المساحة المتبقية من شاشة
-            child: BestSellerListView()),
+            child: BookListView()),
       ],
     );
   }

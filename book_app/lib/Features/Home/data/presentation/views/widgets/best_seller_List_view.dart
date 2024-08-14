@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+class BookListView extends StatelessWidget {
+  const BookListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class BestSellerListView extends StatelessWidget {
             child: GestureDetector(
               child: const BestSellerListViewIteam(),
               onTap: () {
-                GoRouter.of(context).push(AppRouter.KBookDetailesView);
+                GoRouter.of(context).push(AppRouter.kBookDetailesView);
               },
             ),
           );
