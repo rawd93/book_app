@@ -22,8 +22,7 @@ class BookApp extends StatelessWidget {
         textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
         scaffoldBackgroundColor: KPrimaryColor,
       ),
-    //  : const SplashView(),
+      //  : const SplashView(),
     );
   }
 }
- 

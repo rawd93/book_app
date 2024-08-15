@@ -18,4 +18,3 @@ class FeatchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
     return homeRepo.featchFeatureBook();
   }
 }
-

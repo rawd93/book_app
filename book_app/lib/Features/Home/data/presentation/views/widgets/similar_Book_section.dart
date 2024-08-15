@@ -1,8 +1,3 @@
-
-
-
-
-
 import 'package:book_app/Features/Home/data/presentation/views/widgets/Similar%20_book_list_view.dart';
 import 'package:book_app/core/Utiles/styles.dart';
 import 'package:flutter/cupertino.dart';

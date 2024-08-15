@@ -8,7 +8,7 @@ class FeatchNewestUsecase extends UseCase<List<BookEntity>, NoParam> {
   final HomeRepo homeRepo;
 
   FeatchNewestUsecase({required this.homeRepo});
-    @override
+  @override
   Future<Either<Failure, List<BookEntity>>> call([NoParam? Param]) {
     return homeRepo.featchNewestBook();
   }
