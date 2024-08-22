@@ -2,12 +2,12 @@ import 'package:book_app/Constatnt.dart';
 import 'package:book_app/Features/Home/Domain/Entities/book_Entity.dart';
 import 'package:hive/hive.dart';
 
-abstract class HomeLocalSource {
+abstract class HomeLocalDataSource {
   List<BookEntity> featchFeaturedBooks();
   List<BookEntity> featchNewestBooks();
 }
 
-class HomeLocalSourceImpl extends HomeLocalSource {
+class HomeLocalSourceImpl extends HomeLocalDataSource {
   @override
   List<BookEntity> featchFeaturedBooks() {
     var box = Hive.box<BookEntity>(KFeaturedBox); //كيشت البيانات على الجهاز
