@@ -7,7 +7,7 @@ import 'package:dartz/dartz.dart';
 class FeatchNewestUsecase extends UseCase<List<BookEntity>, NoParam> {
   final HomeRepo homeRepo;
 
-  FeatchNewestUsecase({required this.homeRepo});
+  FeatchNewestUsecase( this.homeRepo);
   @override
   Future<Either<Failure, List<BookEntity>>> call([NoParam? Param]) {
     return homeRepo.featchNewestBook();

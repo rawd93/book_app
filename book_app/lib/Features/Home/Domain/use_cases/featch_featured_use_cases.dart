@@ -12,7 +12,7 @@ import 'package:dartz/dartz.dart';
 class FeatchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
   final HomeRepo homeRepo;
 
-  FeatchFeaturedBooksUseCase({required this.homeRepo});
+  FeatchFeaturedBooksUseCase( this.homeRepo);
   @override
   Future<Either<Failure, List<BookEntity>>> call([NoParam? param]) {
     return homeRepo.featchFeatureBook();
